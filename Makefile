@@ -30,9 +30,9 @@ build: ## build binary
 docs: ## generate docs
 	@go run github.com/hashicorp/terraform-plugin-docs/cmd/tfplugindocs
 
-.PHONY: check-docs
-check-docs: docs ## check that docs have been generated
-	@git diff --exit-code -- docs
+#.PHONY: check-docs
+#check-docs: docs ## check that docs have been generated
+#	@git diff --exit-code -- docs
 
 .PHONY: check-mod
 check-mod: ## check go.mod is up-to-date
