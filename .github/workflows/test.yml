@@ -32,8 +32,8 @@ jobs:
       - name: Check mod
         run: make check-mod
 
-      - name: Check doc
-        run: make check-docs
+      #- name: Check doc
+        #run: make check-docs
 
       - name: Test
         run: make test
